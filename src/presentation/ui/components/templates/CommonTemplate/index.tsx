@@ -16,12 +16,24 @@ const Main = styled.main`
     padding-bottom: 70px;
 `
 
+const HomeLink = styled.a`
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    :before {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f015';
+        font-weight: 700;
+    }
+`
+
 const ContentWrapper = styled.div`
     margin: 0px 20px 0px 20px;
 `
 
 const CommonTemplate: React.FC<Props> = ({ children }): React.ReactElement => (
     <CommonWrapper>
+        <HomeLink href="/"/>
         <Main>
             <ContentWrapper>{children}</ContentWrapper>
         </Main>
