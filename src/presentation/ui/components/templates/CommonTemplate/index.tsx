@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import styled from 'styled-components'
 
 interface Props {}
@@ -20,6 +21,7 @@ const HomeLink = styled.a`
     font-size: 24px;
     text-decoration: none;
     color: black;
+    cursor: pointer;
     :before {
         font-family: 'Font Awesome 5 Free';
         content: '\f015';
@@ -33,7 +35,9 @@ const ContentWrapper = styled.div`
 
 const CommonTemplate: React.FC<Props> = ({ children }): React.ReactElement => (
     <CommonWrapper>
-        <HomeLink href="/"/>
+        <Link href={'/'}>
+            <HomeLink />
+        </Link>
         <Main>
             <ContentWrapper>{children}</ContentWrapper>
         </Main>
