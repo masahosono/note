@@ -3,7 +3,7 @@
     "dev": "nodemon",
     "build": "next build && tsc --project tsconfig.server.json",
     "start": "NODE_ENV=production node dist/index.js",
-    "watch": "next-remote-watch docs/articles"
+    "watch": "PORT=3001 next-remote-watch docs/articles"
   },
   "name": "src",
   "dependencies": {
