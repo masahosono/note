@@ -112,9 +112,27 @@ const Text = styled.div`
         font-size: 20px;
     }
     
+    strong {
+        color: red;
+    }
+    
     p {
         margin-top: 1.25em;
         margin-bottom: 1.25em;
+    }
+    
+    table {
+        border-collapse:  collapse;
+    }
+    
+   th {
+        border: solid 1px;
+        padding: 10px;
+   }
+
+    td {
+        border: solid 1px;
+        padding: 10px;
     }
 `
 const ArticlePage = (props: ArticlePageProps) => {
